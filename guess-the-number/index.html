@@ -6,7 +6,7 @@
     </p>
     <p>
     <!-- the number we will try to guess -->
-    <div style="display:none" value="100"
+    <div style="display:none" value="1000"
          id="correct-number"></div>
     Guess your number: 
     <input type="number" id="guess-number"/>
@@ -17,7 +17,7 @@
   </body>
   <script>
     // set the rabdom number
-    var theNumber = Math.floor((Math.random() * 100) + 1);
+    var theNumber = Math.floor((Math.random() * 1000) + 1);
     document.getElementById("correct-number").
     setAttribute("value", theNumber);
     
