@@ -3,5 +3,13 @@
     <h1>Consecutive Numbers Problem</h1>
     <p>Tell me a number: <input id="theNumber" type="number"/></p>
     <p><input id="clickMe" type="button" value="Click Me"/></p>
-  </dody>
+    
+    <script>
+      document.getElementById("clickMe").onclick = function() {
+        // get the number.
+        var theNumber = parseInt(document.getElementById('theNumber').value);
+        alert(theNumber);
+      }
+    </script>
+  </body>
 </html>
