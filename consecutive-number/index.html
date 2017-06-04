@@ -8,7 +8,15 @@
       document.getElementById("clickMe").onclick = function() {
         // get the number.
         var theNumber = parseInt(document.getElementById('theNumber').value);
+        // DEBUG: alert the number to make sure it is the correct number.
         alert("I know your number is " + theNumber);
+        
+        // step 1: the simple way:
+        var theResult = 0;
+        for(i = 1; i < theNumber + 1; i++) {
+          theResult = theResult + i;
+        }
+        alert("The result is: " + theResult);
       }
     </script>
   </body>
