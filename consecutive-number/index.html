@@ -22,7 +22,9 @@
         var startNumber = parseInt(document.getElementById('startNumber').value);
         var endNumber = parseInt(document.getElementById('endNumber').value);
         // DEBUG: alert the number to make sure it is the correct number.
-        alert("I know your numbers are " + startNumber + " - " + endNumber);
+        //alert("I know your numbers are " + startNumber + " - " + endNumber);
+        var resultsElement = document.getElementById('results');
+        resultsElement.innerHTML = "I know your numbers are " + startNumber + " - " + endNumber;
         
         // step 1: the simple way:
         var theResult = 0;
